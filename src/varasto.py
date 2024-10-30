@@ -1,6 +1,7 @@
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0):
-        if tilavuus > 0.0:
+        # if tilavuus > 0.0:
+        if tilavuus > 1000.0: # rikotaan testi, jotta nähdään mitä GitHub actions:issä tapahtuu
             self.tilavuus = tilavuus
         else:
             # virheellinen, nollataan
